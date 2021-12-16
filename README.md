@@ -92,4 +92,5 @@ https://ithelp.ithome.com.tw/articles/10227654
 https://dasanlin888.pixnet.net/blog/post/476250317-%E6%AD%A3%E8%A6%8F%E5%8C%96%E8%BF%B4%E6%AD%B8(regularized-regression)  
 https://allen108108.github.io/blog/2019/10/22/L1%20,%20L2%20Regularization%20%E5%88%B0%E5%BA%95%E6%AD%A3%E5%89%87%E5%8C%96%E4%BA%86%E4%BB%80%E9%BA%BC%20_/  
 https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regularization%E5%B7%AE%E7%95%B0-8d7fc089b35c  
+https://www.cnblogs.com/zingp/p/10375691.html
 > 備份於 Reference 資料夾中
