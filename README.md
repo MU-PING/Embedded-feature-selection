@@ -135,11 +135,11 @@
 實務上要選擇L1 或 L2， 就模型計算出來的 Loss 來看，L1 和 L2 所產生的最小 Loss 不會有太大差別，所以單純只看最小化 Loss 的結果來判斷要用哪種，其實結果是差不多的。不過就功能性來說，**當使用者的模型中具有過多的參數，想自動化把不重要的變數給移除，那應該要選擇 L1**；**如果想找到模型當中重要的參數可以透過 L2 來去辨別哪些參數是重要的，因為不重要參數的迴歸係數會趨近於0，但不會真的消失，所以可以根據迴歸係數的大小來得到重要參數的排名**
 
 ## 參考
-https://ithelp.ithome.com.tw/articles/10246876  
-https://ithelp.ithome.com.tw/articles/10227654  
-https://dasanlin888.pixnet.net/blog/post/476250317-%E6%AD%A3%E8%A6%8F%E5%8C%96%E8%BF%B4%E6%AD%B8(regularized-regression)  
-https://allen108108.github.io/blog/2019/10/22/L1%20,%20L2%20Regularization%20%E5%88%B0%E5%BA%95%E6%AD%A3%E5%89%87%E5%8C%96%E4%BA%86%E4%BB%80%E9%BA%BC%20_/  
-https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regularization%E5%B7%AE%E7%95%B0-8d7fc089b35c  
-https://www.cnblogs.com/zingp/p/10375691.html
-https://towardsdatascience.com/whats-the-difference-between-linear-regression-lasso-ridge-and-elasticnet-8f997c60cf29
+* [Day30 - Feature Selection -- 3. Embedded methods(嵌入法) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10246876)  
+* [[Day20] Lasso 和 Ridge 正規化回歸 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10227654)
+* [正規化迴歸(Regularized Regression) @ 晨晰統計部落格新站（統計、SPSS、BIG DATA討論園地） __ 痞客邦 __](https://dasanlin888.pixnet.net/blog/post/476250317-%E6%AD%A3%E8%A6%8F%E5%8C%96%E8%BF%B4%E6%AD%B8(regularized-regression))
+* [L1 , L2 Regularization 到底正則化了什麼 _ _ Math.py](https://allen108108.github.io/blog/2019/10/22/L1%20,%20L2%20Regularization%20%E5%88%B0%E5%BA%95%E6%AD%A3%E5%89%87%E5%8C%96%E4%BA%86%E4%BB%80%E9%BA%BC%20_/)
+* [Learning Model _ L1_L2 regularization差異 _ by Ryan Lu _ AI反斗城 _ Medium](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regularization%E5%B7%AE%E7%95%B0-8d7fc089b35c)
+* [深入理解L1、L2正则化 - ZingpLiu - 博客园](https://www.cnblogs.com/zingp/p/10375691.html)
+* [What’s the difference between Linear Regression, Lasso, Ridge, and ElasticNet in sklearn_ _ by Wenwei Xu _ Towards Data Science](https://towardsdatascience.com/whats-the-difference-between-linear-regression-lasso-ridge-and-elasticnet-8f997c60cf29)
 > 備份於 Reference 資料夾中
