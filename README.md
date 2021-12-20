@@ -87,32 +87,33 @@
 ### Lasso: Linear Regression with L1 Regularization
 * 全名：least absolute shrinkage and selection operator，又譯最小絕對值收斂和選擇算子、套索算法
 * 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛
-  * 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛： 表示加了 L1 的損失函數
-  * 𝐿𝑜𝑠𝑠 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛： 表示原本的損失函數
-  * 𝑅𝑒𝑔𝑢𝑙𝑎𝑟𝑖𝑧𝑎𝑡𝑖𝑜𝑛 𝑇𝑒𝑟𝑚： L1  
-  * 𝑥：feature 
-  * 𝑦：regression label
-  * 𝑊：feature weights
-  * 𝑁：numbers of data
-  * 𝑀：numbers of feature
-  * 𝜆：L1的有效性    
+  * 【**𝐿𝑜𝑠𝑠′**】： 加了 L1 的損失函數
+  * 【**𝐿𝑜𝑠𝑠 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛**】： 原本的損失函數
+  * 【**𝑟𝑒𝑔𝑢𝑙𝑎𝑟𝑖𝑧𝑎𝑡𝑖𝑜𝑛 𝑡𝑒𝑟𝑚**】： L1    
   
-    <img src="https://user-images.githubusercontent.com/93152909/146438380-07f07a50-9c0c-4cc0-8e82-c532d5289886.png" width="350">
-
+    <img src="https://user-images.githubusercontent.com/93152909/146800930-c302a9cf-d91d-4a8e-be8f-8479073d719a.png" width="500">
+    
+      * 𝑋：feature 
+      * 𝑦：regression label
+      * 𝑤：feature weights
+      * 𝑚：numbers of data
+      * 𝑝：numbers of feature
+      * 𝑎𝑙𝑝ℎ𝑎：L1的有效性
 ### Ridge: Linear Regression with L2 Regularization
 
 * 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛
-  * 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛： 表示加了 L2 的損失函數
-  * 𝐿𝑜𝑠𝑠 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛： 表示原本的損失函數
-  * 𝑅𝑒𝑔𝑢𝑙𝑎𝑟𝑖𝑧𝑎𝑡𝑖𝑜𝑛 𝑇𝑒𝑟𝑚： L2  
-  * 𝑥：feature 
-  * 𝑦：regression label
-  * 𝑊：feature weights
-  * 𝑁：numbers of data
-  * 𝑀：numbers of feature
-  * 𝜆：L2的有效性  
-   
-    <img src="https://user-images.githubusercontent.com/93152909/146438433-e849b573-6302-4fe9-bfc0-efbf7c8ce027.png" width="350">
+  * 【**𝐿𝑜𝑠𝑠′**】： 加了 L2 的損失函數
+  * 【**𝐿𝑜𝑠𝑠 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛**】： 原本的損失函數
+  * 【**𝑟𝑒𝑔𝑢𝑙𝑎𝑟𝑖𝑧𝑎𝑡𝑖𝑜𝑛 𝑡𝑒𝑟𝑚**】： L2  
+  
+    <img src="https://user-images.githubusercontent.com/93152909/146800936-0630302e-e521-4d4e-b939-5399df703acc.png" width="500">
+    
+      * 𝑋：feature 
+      * 𝑦：regression label
+      * 𝑤：feature weights
+      * 𝑚：numbers of data
+      * 𝑝：numbers of feature
+      * 𝑎𝑙𝑝ℎ𝑎：L2的有效性  
 
 
 ## 參考
@@ -122,4 +123,5 @@ https://dasanlin888.pixnet.net/blog/post/476250317-%E6%AD%A3%E8%A6%8F%E5%8C%96%E
 https://allen108108.github.io/blog/2019/10/22/L1%20,%20L2%20Regularization%20%E5%88%B0%E5%BA%95%E6%AD%A3%E5%89%87%E5%8C%96%E4%BA%86%E4%BB%80%E9%BA%BC%20_/  
 https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/learning-model-l1-l2-regularization%E5%B7%AE%E7%95%B0-8d7fc089b35c  
 https://www.cnblogs.com/zingp/p/10375691.html
+https://towardsdatascience.com/whats-the-difference-between-linear-regression-lasso-ridge-and-elasticnet-8f997c60cf29
 > 備份於 Reference 資料夾中
