@@ -3,6 +3,35 @@
 ### 簡述
 * 使用 sklearn 實作 Feature Selection 中的 **Embedded methods【嵌入法】**
 
+* train.csv 為 Boston 房價資料集，皆以其作為 Embedded methods 的範例資料集
+  * 【CRIM】 - per capita crime rate by town
+
+  * 【ZN】 - proportion of residential land zoned for lots over 25,000 sq.ft.
+  
+  * 【INDUS】 - proportion of non-retail business acres per town.
+  
+  * 【CHAS】 - Charles River dummy variable (1 if tract bounds river; 0 otherwise)
+  
+  * 【NOX】 - nitric oxides concentration (parts per 10 million)
+  
+  * 【RM】 - average number of rooms per dwelling
+  
+  * 【AGE】 - proportion of owner-occupied units built prior to 1940
+  
+  * 【DIS】 - weighted distances to five Boston employment centres
+  
+  * 【RAD】 - index of accessibility to radial highways
+  
+  * 【TAX】 - full-value property-tax rate per $10,000
+  
+  * 【PTRATIO】 - pupil-teacher ratio by town
+  
+  * 【B】 - 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
+  
+  * 【LSTAT】 - % lower status of the population
+  
+  * :heavy_check_mark:【MEDV】 - Median value of owner-occupied homes in $1000's【代表Label】
+  
 ## Feature Selection
 * 又稱為 variable selection、attribution selection 或 subset selection
 
@@ -37,12 +66,10 @@
 ## Embedded methods【嵌入法】
 * 嵌入法是指在機器學習模型訓練的同時，執行特徵選擇
 
-* 結合  Wrapper methods 與 Filter methods 的優點
-
 * 概念圖  
   ![image](https://user-images.githubusercontent.com/93152909/146382076-9f165415-c872-4665-bab5-4649ba62b721.png)
 
-* 優點
+* 優點 - 結合  Wrapper methods 與 Filter methods 的優點
 
   * 與 Wrapper methods 優點相同，能偵測變數之間的相互影響
   
@@ -69,7 +96,8 @@
   * 𝑁：numbers of data
   * 𝑀：numbers of feature
   * 𝜆：L1的有效性    
-    <img src="https://user-images.githubusercontent.com/93152909/146438380-07f07a50-9c0c-4cc0-8e82-c532d5289886.png" width="650">
+  
+    <img src="https://user-images.githubusercontent.com/93152909/146438380-07f07a50-9c0c-4cc0-8e82-c532d5289886.png" width="350">
 
 ### Ridge: Linear Regression with L2 Regularization
 
@@ -82,8 +110,9 @@
   * 𝑊：feature weights
   * 𝑁：numbers of data
   * 𝑀：numbers of feature
-  * 𝜆：L2的有效性   
-    <img src="https://user-images.githubusercontent.com/93152909/146438433-e849b573-6302-4fe9-bfc0-efbf7c8ce027.png" width="650">
+  * 𝜆：L2的有效性  
+   
+    <img src="https://user-images.githubusercontent.com/93152909/146438433-e849b573-6302-4fe9-bfc0-efbf7c8ce027.png" width="350">
 
 
 ## 參考
