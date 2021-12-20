@@ -1,7 +1,11 @@
 # embedded-feature-selection
 ## 程式簡介
 ### 簡述
-* 使用 sklearn 實作 Feature Selection 中的 **Embedded methods【嵌入法】**
+* 使用 Sklearn  實作 Feature Selection 中的 **Embedded methods【嵌入法】**
+
+* Lasso.ipynb 以「Lasso」實作 Embedded methods
+
+* Ridge.ipynb 以「Ridge」實作 Embedded methods
 
 * train.csv 為 Boston 房價資料集，皆以其作為 Embedded methods 的範例資料集
   * 【CRIM】 - per capita crime rate by town
@@ -85,6 +89,12 @@
   
   * Ridge: Linear Regression with L2 Regularization
 ### Lasso: Linear Regression with L1 Regularization
+
+```python
+ # Lasso with cross-validation
+ from sklearn.linear_model import LassoCV
+```
+
 * 全名：least absolute shrinkage and selection operator，又譯最小絕對值收斂和選擇算子、套索算法
 * 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛 - sklearn
   * 【**𝐿𝑜𝑠𝑠′**】： 加了 L1 的損失函數
@@ -100,6 +110,11 @@
       * 𝑝：numbers of feature
       * 𝑎𝑙𝑝ℎ𝑎：L1的有效性
 ### Ridge: Linear Regression with L2 Regularization
+
+```python
+ # Ridge with cross-validation
+ from sklearn.linear_model import RidgeCV
+```
 
 * 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛 - sklearn
   * 【**𝐿𝑜𝑠𝑠′**】： 加了 L2 的損失函數
