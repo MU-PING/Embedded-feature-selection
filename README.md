@@ -1,7 +1,7 @@
 # embedded-feature-selection
 ## 程式簡介
 ### 簡述
-* 使用 Sklearn  實作 Feature Selection 中的 **Embedded methods【嵌入法】**
+* 使用 Sklearn  套件實作 Feature Selection 中的 **Embedded methods【嵌入法】**
 
 * Lasso.ipynb 以「Lasso」實作 Embedded methods
 
