@@ -86,7 +86,7 @@
   * Ridge: Linear Regression with L2 Regularization
 ### Lasso: Linear Regression with L1 Regularization
 * 全名：least absolute shrinkage and selection operator，又譯最小絕對值收斂和選擇算子、套索算法
-* 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛
+* 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛 - sklearn
   * 【**𝐿𝑜𝑠𝑠′**】： 加了 L1 的損失函數
   * 【**𝐿𝑜𝑠𝑠 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛**】： 原本的損失函數
   * 【**𝑟𝑒𝑔𝑢𝑙𝑎𝑟𝑖𝑧𝑎𝑡𝑖𝑜𝑛 𝑡𝑒𝑟𝑚**】： L1    
@@ -101,7 +101,7 @@
       * 𝑎𝑙𝑝ℎ𝑎：L1的有效性
 ### Ridge: Linear Regression with L2 Regularization
 
-* 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛
+* 𝐿𝑜𝑠𝑠′ 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛 - sklearn
   * 【**𝐿𝑜𝑠𝑠′**】： 加了 L2 的損失函數
   * 【**𝐿𝑜𝑠𝑠 𝑓𝑢𝑛𝑐𝑡𝑖𝑜𝑛**】： 原本的損失函數
   * 【**𝑟𝑒𝑔𝑢𝑙𝑎𝑟𝑖𝑧𝑎𝑡𝑖𝑜𝑛 𝑡𝑒𝑟𝑚**】： L2  
@@ -114,7 +114,25 @@
       * 𝑚：numbers of data
       * 𝑝：numbers of feature
       * 𝑎𝑙𝑝ℎ𝑎：L2的有效性  
+      
+### L1 && L2
+* 目的都是在 Loss function 中加入適當的【懲罰項】，讓模型不會過度收斂
 
+* L1 & L2都能避免使得其中模型參數一個有極大正係數與另一個有極大負係數一起出現的情況
+
+#### L1 regularization
+* L1 會將不具影響力的變數迴歸係數變成0，等於可以自動化的進行變數篩選(Feature selection)
+
+* 變數篩選的同時可能也會犧牲掉模型的正確性，用正確性換泛化性
+
+#### L2 regularization
+
+* L2 會將不具影響力的變數迴歸係數逼近為0(不會剛好等於0)，可以藉此降低資料集中的雜訊
+
+* L2 會保留所有變數，無法做變數篩選，模型可能還是會存在一些不重要的參數，多多少少影響模型的正確性
+
+#### 如何選擇
+實務上要選擇Lasso 或 Ridge regression， 就模型計算出來的MSE來看，Ridge和Lasso模型所產生的最小MSE不會有太大差別，所以單純只看最小化MSE的結果來判斷要用哪一種模型，其實兩者結果是差不多的。不過就功能性來說，當使用者的模型中具有過多的參數，想自動化把不重要的變數給移除，那應該要選擇Lasso model；如果我們想找到模型當中重要的參數可以透過Ridge model來去辨別哪些參數是重要的，因為不重要的參數會在模式當中迴歸係數會趨近於0，但因為不會真的消失，所以可以根據迴歸係數的大小來得到重要參數的排名
 
 ## 參考
 https://ithelp.ithome.com.tw/articles/10246876  
