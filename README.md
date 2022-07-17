@@ -24,7 +24,7 @@
   |PTRATIO|pupil-teacher ratio by town|
   |B|1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town|
   |LSTAT|% lower status of the population|
-  |【**Label**】MEDV|Median value of owner-occupied homes in $1000's|
+  |【**Label**】MEDV|median value of owner-occupied homes in $1000's|
   
 ## Feature Selection
 * 又稱為 variable selection、attribution selection 或 subset selection
