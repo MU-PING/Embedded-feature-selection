@@ -9,7 +9,7 @@
 
 * train.csv 為 Boston 房價資料集，皆以其作為 Embedded methods 的範例資料集
 
-  |Attribute|Description|  
+  |Attribute|Description( All are 【**continuous**】 )|  
   | -------- | -------- | 
   |CRIM|per capita crime rate by town|
   |ZN|proportion of residential land zoned for lots over 25,000 sq.ft|
